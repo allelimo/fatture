@@ -1,0 +1,559 @@
+/*==========================
+Framework7 Layouts Themes
+==========================*/
+:root {
+  --main-bg-d: #1c1d1f;
+  --main-font-d: #d2d2d2; 
+  --navbar-bg-d: #131313;
+  --leftpanel-bg-d: #222426;
+  --something-d: red;
+}
+/* === Dark layout === */
+.layout-desktop-dark .navbar,
+.navbar.layout-desktop-dark,
+.layout-desktop-dark .subnavbar,
+.subnavbar.layout-desktop-dark {
+  /*background-color: #131313;*/
+  /*color: #fff;*/
+  background-color: var(--navbar-bg-d);
+  color:  var(--main-font-d);
+}
+.layout-desktop-dark .navbar:after,
+.navbar.layout-desktop-dark:after,
+.layout-desktop-dark .subnavbar:after,
+.subnavbar.layout-desktop-dark:after {
+  /*background-color: #333;*/
+  display: none;
+}
+.layout-desktop-dark .toolbar,
+.toolbar.layout-desktop-dark {
+  /*background-color: #131313;
+  color: #fff;*/
+  background-color: var(--navbar-bg-d);
+  color: var(--main-font-d);
+}
+.layout-desktop-dark .toolbar:before,
+.toolbar.layout-desktop-dark:before {
+  background-color: #333;
+}
+.layout-desktop-dark .picker-modal .toolbar {
+  /*background-color: #131313;*/
+  background-color: var(--navbar-bg-d);
+}
+.layout-desktop-dark .popover .picker-modal .toolbar {
+  background: none;
+}
+.layout-desktop-dark .picker-calendar-week-days {
+  color: #fff;
+  background-color: #131313;
+}
+.layout-desktop-dark .popover .picker-modal .picker-center-highlight:before,
+.layout-desktop-dark .picker-modal.picker-modal-inline .picker-center-highlight:before {
+  background-color: #333;
+}
+.layout-desktop-dark .popover .picker-modal .picker-center-highlight:after,
+.layout-desktop-dark .picker-modal.picker-modal-inline .picker-center-highlight:after {
+  background-color: #333;
+}
+.layout-desktop-dark .popover .picker-modal .picker-item.picker-selected,
+.layout-desktop-dark .picker-modal.picker-modal-inline .picker-item.picker-selected {
+  color: #fff;
+}
+.layout-desktop-dark .popover .picker-modal .picker-calendar-week-days,
+.layout-desktop-dark .picker-modal.picker-modal-inline .picker-calendar-week-days {
+  color: #fff;
+}
+.layout-desktop-dark .popover .picker-modal .picker-calendar-day,
+.layout-desktop-dark .picker-modal.picker-modal-inline .picker-calendar-day {
+  color: #fff;
+}
+.layout-desktop-dark .popover .picker-modal .picker-calendar-day.picker-calendar-day-prev,
+.layout-desktop-dark .picker-modal.picker-modal-inline .picker-calendar-day.picker-calendar-day-prev,
+.layout-desktop-dark .popover .picker-modal .picker-calendar-day.picker-calendar-day-next,
+.layout-desktop-dark .picker-modal.picker-modal-inline .picker-calendar-day.picker-calendar-day-next {
+  color: #777;
+}
+.layout-desktop-dark .popover .picker-modal .picker-calendar-day.picker-calendar-day-disabled,
+.layout-desktop-dark .picker-modal.picker-modal-inline .picker-calendar-day.picker-calendar-day-disabled {
+  color: #555;
+}
+.layout-desktop-dark .popover .picker-modal .picker-calendar-day.picker-calendar-day-today span,
+.layout-desktop-dark .picker-modal.picker-modal-inline .picker-calendar-day.picker-calendar-day-today span {
+  background: #333;
+}
+.layout-desktop-dark .popover .picker-modal .picker-calendar-day.picker-calendar-day-has-events span:after,
+.layout-desktop-dark .picker-modal.picker-modal-inline .picker-calendar-day.picker-calendar-day-has-events span:after {
+  background: #555;
+}
+.layout-desktop-dark .popover .picker-modal .picker-calendar-week-days:after,
+.layout-desktop-dark .picker-modal.picker-modal-inline .picker-calendar-week-days:after,
+.layout-desktop-dark .popover .picker-modal .picker-calendar-row:after,
+.layout-desktop-dark .picker-modal.picker-modal-inline .picker-calendar-row:after {
+  background-color: #333;
+}
+.layout-desktop-dark .popover .picker-modal .toolbar ~ .picker-modal-inner .picker-calendar-months:before,
+.layout-desktop-dark .picker-modal.picker-modal-inline .toolbar ~ .picker-modal-inner .picker-calendar-months:before,
+.layout-desktop-dark .popover .picker-modal .picker-calendar-week-days ~ .picker-calendar-months:before,
+.layout-desktop-dark .picker-modal.picker-modal-inline .picker-calendar-week-days ~ .picker-calendar-months:before {
+  background-color: #333;
+}
+.layout-desktop-dark .popover .picker-modal .toolbar:after {
+  background-color: #333;
+}
+.layout-desktop-dark .photo-browser .navbar,
+.layout-desktop-dark .views .view[data-page="photo-browser-slides"] .navbar,
+.layout-desktop-dark .photo-browser .toolbar,
+.layout-desktop-dark .views .view[data-page="photo-browser-slides"] .toolbar {
+  color: var(--main-font-d);
+  background: rgba(247, 247, 247, 0.95);
+}
+.layout-desktop-dark .photo-browser-dark .navbar,
+.layout-desktop-dark .photo-browser-dark .toolbar {
+  background: rgba(30, 30, 30, 0.8);
+  /*color: #fff;*/
+  color: var(--navbar-bg-d);
+}
+.layout-desktop-dark .tabbar a:not(.active) {
+  color: #fff;
+}
+.layout-desktop-dark .page,
+.layout-desktop-dark .login-screen-content,
+.page.layout-desktop-dark,
+.layout-desktop-dark .panel,
+.panel.layout-desktop-dark {
+  /*background-color: #222426;*/
+  /*color: #ddd;*/
+  background-color: var(--main-bg-d);
+  color: var(--main-font-d);
+}
+.layout-desktop-dark .content-block-title {
+  color: #fff;
+}
+.layout-desktop-dark .content-block,
+.content-block.layout-desktop-dark {
+  color: #bbb;
+}
+.layout-desktop-dark .content-block-inner {
+  background: #1c1d1f;
+  color: var(--main-font);
+}
+.layout-desktop-dark .content-block-inner:before {
+  background-color: #393939;
+}
+.layout-desktop-dark .content-block-inner:after {
+  background-color: #393939;  
+}
+.layout-desktop-dark .list-block ul,
+.list-block.layout-desktop-dark ul {
+  /*background: #1c1d1f;*/
+  background: var(--main-bg-d);
+}
+.layout-desktop-dark .list-block ul:before,
+.list-block.layout-desktop-dark ul:before {
+  /*background-color: #393939;*/
+  display: none;
+      /*background-color: var(--main-bg-d);*/
+
+}
+.layout-desktop-dark .list-block ul:after,
+.list-block.layout-desktop-dark ul:after {
+  /*background-color: #393939;*/
+/*background-color: var(--something-d);*/
+      /*background-color: var(--main-bg-d);*/
+      display: none;
+}
+.layout-desktop-dark .list-block.inset ul,
+.list-block.layout-desktop-dark.inset ul {
+  background: #1c1d1f;
+}
+.layout-desktop-dark .list-block.notifications > ul,
+.list-block.layout-desktop-dark.notifications > ul {
+  background: none;
+}
+.layout-desktop-dark .autocomplete-dropdown {
+  background: #1c1d1f;
+}
+.layout-desktop-dark .autocomplete-dropdown .list-block b {
+  color: #fff;
+}
+.layout-desktop-dark .card {
+  background: #1c1d1f;
+}
+.layout-desktop-dark .card-header:after {
+  background-color: #393939;
+}
+.layout-desktop-dark .card-footer {
+  color: #bbb;
+}
+.layout-desktop-dark .card-footer:before {
+  background-color: #393939;
+}
+.layout-desktop-dark .popover,
+.popover.layout-desktop-dark {
+  background: rgba(0, 0, 0, 0.8);
+}
+.layout-desktop-dark .popover .popover-angle:after,
+.popover.layout-desktop-dark .popover-angle:after {
+  background: rgba(0, 0, 0, 0.8);
+}
+.layout-desktop-dark .popover .list-block ul,
+.popover.layout-desktop-dark .list-block ul {
+  background: none;
+}
+.layout-desktop-dark .actions-popover .list-block ul:before {
+  background-color: #393939;
+}
+.layout-desktop-dark .actions-popover .list-block ul:after {
+  background-color: #393939;
+}
+.layout-desktop-dark .actions-popover .actions-popover-label:after {
+  background-color: #393939;
+}
+.layout-desktop-dark li.sorting {
+  background-color: #29292f;
+}
+.layout-desktop-dark .swipeout-actions-left a,
+.layout-desktop-dark .swipeout-actions-right a {
+  background-color: #444;
+}
+.layout-desktop-dark .item-inner:after,
+.layout-desktop-dark .list-block ul ul li:last-child .item-inner:after {
+  /*background-color: #393939;*/
+  display: none;
+}
+.layout-desktop-dark .item-after {
+  color: #bbb;
+}
+html:not(.watch-active-state) .layout-desktop-dark .item-link:active,
+html:not(.watch-active-state) .layout-desktop-dark label.label-checkbox:active,
+html:not(.watch-active-state) .layout-desktop-dark label.label-radio:active,
+.layout-desktop-dark .item-link.active-state,
+.layout-desktop-dark label.label-checkbox.active-state,
+.layout-desktop-dark label.label-radio.active-state {
+  background-color: #29292f;
+}
+.layout-desktop-dark .item-link.list-button:after {
+  background-color: var(--main-bg-d);
+}
+.layout-desktop-dark .list-block-label {
+  color: #bbb;
+}
+.layout-desktop-dark .item-divider,
+.layout-desktop-dark .list-group-title {
+  background: #1a1a1a;
+  color: #bbb;
+}
+.layout-desktop-dark .item-divider:before,
+.layout-desktop-dark .list-group-title:before {
+  background-color: #393939;
+}
+.layout-desktop-dark .searchbar {
+  background: #333;
+}
+.layout-desktop-dark .searchbar:after {
+  background-color: #333;
+}
+.layout-desktop-dark .list-block input[type="text"],
+.list-block.layout-desktop-dark input[type="text"],
+.layout-desktop-dark .list-block input[type="password"],
+.list-block.layout-desktop-dark input[type="password"],
+.layout-desktop-dark .list-block input[type="email"],
+.list-block.layout-desktop-dark input[type="email"],
+.layout-desktop-dark .list-block input[type="tel"],
+.list-block.layout-desktop-dark input[type="tel"],
+.layout-desktop-dark .list-block input[type="url"],
+.list-block.layout-desktop-dark input[type="url"],
+.layout-desktop-dark .list-block input[type="date"],
+.list-block.layout-desktop-dark input[type="date"],
+.layout-desktop-dark .list-block input[type="datetime-local"],
+.list-block.layout-desktop-dark input[type="datetime-local"],
+.layout-desktop-dark .list-block input[type="number"],
+.list-block.layout-desktop-dark input[type="number"],
+.layout-desktop-dark .list-block select,
+.list-block.layout-desktop-dark select,
+.layout-desktop-dark .list-block textarea,
+.list-block.layout-desktop-dark textarea {
+  /*color: #fff;*/
+  color: var(--main-font-d); /*777*/
+}
+.layout-desktop-dark .label-switch .checkbox {
+  background-color: #393939; /*check*/
+  width: 44px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  height: 20px;
+
+}
+.layout-desktop-dark .label-switch .checkbox:before {
+  background-color: #1c1d1f; /*check*/
+  content: ' ';
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 40px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  height: 16px;
+}
+.layout-desktop-dark .label-switch .checkbox:after {
+  background: #2d2d2d;
+  height: 10px;
+  width: 10px;
+  border-radius: 16px;
+  top: 5px;
+  left: 8px;
+}
+.layout-desktop-dark .label-switch input[type="checkbox"]:checked + .checkbox {
+  background: #0078d7;
+}
+.layout-desktop-dark .label-switch input[type="checkbox"]:checked + .checkbox:after {
+  background: var(--main-bg-w);
+}
+
+.layout-desktop-dark .range-slider input[type="range"]:after {
+  /*background: #1c1d1f;*/
+  background: var(--main-bg-d);
+}
+.layout-desktop-dark .range-slider input[type="range"]::-ms-thumb {
+  border: none;
+}
+.layout-desktop-dark .myleftpanel {
+    background-color: var(--leftpanel-bg-d);
+}
+
+/*==========================
+Framework7 Layouts Themes
+==========================*/
+:root {
+  --main-bg-w: #fff;
+  --main-font-w: #000;
+  --navbar-bg-w: #ccc;
+  --leftpanel-bg-w: #e5e5e5;
+  --something-w: red;
+}
+/* ===Desktop White layout === */
+.layout-desktop-white .navbar,
+.navbar.layout-desktop-white,
+.layout-desktop-white .subnavbar,
+.subnavbar.layout-desktop-white {
+  /*background-color: #cccccc;
+  color: #000;*/
+  background-color: var(--navbar-bg-w);
+  color:  var(--main-font-w);
+}
+.layout-desktop-white .navbar:after,
+.navbar.layout-desktop-white:after,
+.layout-desktop-white .subnavbar:after,
+.subnavbar.layout-desktop-white:after {
+  display: none
+}
+.layout-desktop-white .toolbar,
+.toolbar.layout-desktop-white {
+  background-color: var(--navbar-bg-w);
+  color: var(--main-font-w);
+}
+.layout-desktop-white .toolbar:before,
+.toolbar.layout-desktop-white:before {
+  background-color: #ddd;
+}
+.layout-desktop-white .picker-modal .toolbar {
+  background-color: var(--navbar-bg-w);
+}
+.layout-desktop-white .popover .picker-modal .toolbar {
+  background: none;
+}
+.layout-desktop-white .popover .picker-modal .picker-center-highlight:before,
+.layout-desktop-white .picker-modal.picker-modal-inline .picker-center-highlight:before {
+  background-color: #ddd;
+}
+.layout-desktop-white .popover .picker-modal .picker-center-highlight:after,
+.layout-desktop-white .picker-modal.picker-modal-inline .picker-center-highlight:after {
+  background-color: #ddd;
+}
+.layout-desktop-white .popover .picker-modal .picker-calendar-week-days:after,
+.layout-desktop-white .picker-modal.picker-modal-inline .picker-calendar-week-days:after,
+.layout-desktop-white .popover .picker-modal .picker-calendar-row:after,
+.layout-desktop-white .picker-modal.picker-modal-inline .picker-calendar-row:after {
+  background-color: #ddd;
+}
+.layout-desktop-white .popover .picker-modal .toolbar ~ .picker-modal-inner .picker-calendar-months:before,
+.layout-desktop-white .picker-modal.picker-modal-inline .toolbar ~ .picker-modal-inner .picker-calendar-months:before,
+.layout-desktop-white .popover .picker-modal .picker-calendar-week-days ~ .picker-calendar-months:before,
+.layout-desktop-white .picker-modal.picker-modal-inline .picker-calendar-week-days ~ .picker-calendar-months:before {
+  background-color: #ddd;
+}
+.layout-desktop-white .popover .picker-modal .toolbar:after {
+  background-color: #ddd;
+}
+.layout-desktop-white .photo-browser .navbar,
+.layout-desktop-white .views .view[data-page="photo-browser-slides"] .navbar,
+.layout-desktop-white .photo-browser .toolbar,
+.layout-desktop-white .views .view[data-page="photo-browser-slides"] .toolbar {
+  color: var(--main-font-w);
+  background: rgba(247, 247, 247, 0.95);
+}
+.layout-desktop-white .photo-browser-dark .navbar,
+.layout-desktop-white .photo-browser-dark .toolbar {
+  background: rgba(30, 30, 30, 0.8);
+  color: var(--navbar-bg-w);
+}
+.layout-desktop-white .tabbar a:not(.active) {
+  color: #777;
+}
+.layout-desktop-white .page,
+.layout-desktop-white .login-screen-content,
+.page.layout-desktop-white {
+  background-color: var(--main-bg-w);
+  color: var(--main-font-w);
+}
+.layout-desktop-white .content-block-title {
+  color: #777;
+}
+.layout-desktop-white .content-block,
+.content-block.layout-desktop-white {
+  color: #777;
+}
+.layout-desktop-white .content-block-inner {
+  background: #fafafa;
+  color: var(--main-font-w);
+}
+.layout-desktop-white .content-block-inner:after {
+  background-color: #ddd;
+}
+.layout-desktop-white .content-block-inner:before {
+  background-color: #ddd;
+}
+.layout-desktop-white .list-block ul,
+.list-block.layout-desktop-white ul {
+  background: var(--main-bg-w);
+}
+.layout-desktop-white .list-block ul:after,
+.list-block.layout-desktop-white ul:after {
+  /*background-color: #fff; /*hair*/
+  display: none;
+}
+.layout-desktop-white .list-block ul:before,
+.list-block.layout-desktop-white ul:before {
+  /*background-color: #fff; /*hair*/
+  display: none;
+}
+.layout-desktop-white .list-block.inset ul,
+.list-block.layout-desktop-white.inset ul {
+  background: #fafafa;
+}
+.layout-desktop-white .list-block.notifications > ul,
+.list-block.layout-desktop-white.notifications > ul {
+  background: none;
+}
+.layout-desktop-white .popover-inner > .list-block ul {
+  background: none;
+}
+.layout-desktop-white li.sorting {
+  background-color: #d9d9d9; /*eee*/
+}
+.layout-desktop-white .swipeout-actions-left a,
+.layout-desktop-white .swipeout-actions-right a {
+  background-color: #c7c7cc;
+}
+.layout-desktop-white .item-inner,
+.layout-desktop-white .list-block ul ul li:last-child .item-inner {
+  border-color: #ddd;
+}
+.layout-desktop-white .item-inner:after,
+.layout-desktop-white .list-block ul ul li:last-child .item-inner:after {
+  /*background-color: #fff; /*hair*/
+    display: none;
+}
+.layout-desktop-white .item-after {
+  color: #8e8e93;
+}
+html:not(.watch-active-state) .layout-desktop-white .item-link:active,
+html:not(.watch-active-state) .layout-desktop-white label.label-checkbox:active,
+html:not(.watch-active-state) .layout-desktop-white label.label-radio:active,
+.layout-desktop-white .item-link.active-state,
+.layout-desktop-white label.label-checkbox.active-state,
+.layout-desktop-white label.label-radio.active-state {
+  background-color: #91c1e7; /*eee*/ /*over color* / /*d9d9d9*/
+}
+.layout-desktop-white .item-link.list-button:after {
+  background-color: var(--main-bg-w);
+}
+.layout-desktop-white .list-block-label {
+  color: #777;
+}
+.layout-desktop-white .item-divider,
+.layout-desktop-white .list-group-title {
+  background: #f7f7f7;
+  color: #777;
+}
+.layout-desktop-white .item-divider:before,
+.layout-desktop-white .list-group-title:before {
+  background-color: #ddd;
+}
+.layout-desktop-white .searchbar {
+  background: #c9c9ce;
+}
+.layout-desktop-white .searchbar:after {
+  background-color: #b4b4b4;
+}
+.layout-desktop-white .list-block input[type="text"],
+.list-block.layout-desktop-white input[type="text"],
+.layout-desktop-white .list-block input[type="password"],
+.list-block.layout-desktop-white input[type="password"],
+.layout-desktop-white .list-block input[type="email"],
+.list-block.layout-desktop-white input[type="email"],
+.layout-desktop-white .list-block input[type="tel"],
+.list-block.layout-desktop-white input[type="tel"],
+.layout-desktop-white .list-block input[type="url"],
+.list-block.layout-desktop-white input[type="url"],
+.layout-desktop-white .list-block input[type="date"],
+.list-block.layout-desktop-white input[type="date"],
+.layout-desktop-white .list-block input[type="datetime-local"],
+.list-block.layout-desktop-white input[type="datetime-local"],
+.layout-desktop-white .list-block input[type="number"],
+.list-block.layout-desktop-white input[type="number"],
+.layout-desktop-white .list-block select,
+.list-block.layout-desktop-white select,
+.layout-desktop-white .list-block textarea,
+.list-block.layout-desktop-white textarea {
+  color: var(--main-font-w); /*777*/
+}
+.layout-desktop-white .label-switch .checkbox {
+  background: #2d2d2d;
+  /*background-color: #e5e5e5;*/
+  width: 44px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  height: 20px;
+}
+.layout-desktop-white .label-switch .checkbox:before {
+  background-color: var(--main-bg-w);
+  content: ' ';
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 40px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  height: 16px;
+}
+.layout-desktop-white .label-switch .checkbox:after {
+  background: #2d2d2d;
+  height: 10px;
+  width: 10px;
+  border-radius: 16px;
+  top: 5px;
+  left: 8px;
+}
+.layout-desktop-white .label-switch input[type="checkbox"]:checked + .checkbox {
+  background: #0078d7;
+}
+.layout-desktop-white .label-switch input[type="checkbox"]:checked + .checkbox:after {
+  background: var(--main-bg-w);
+}
+.layout-desktop-white .range-slider input[type="range"]:after {
+  background: var(--main-bg-w);
+}
+.layout-desktop-white .myleftpanel {
+    background-color: var(--leftpanel-bg-w);
+}

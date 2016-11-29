@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+    <title>Fatture</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="dist/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="dist/css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="dist/css/material-icons.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="desktop-themes.css">
+    <link rel="stylesheet" href="my-app.css">
+  </head>
+  <!--<body>-->
+  <!--<body class="layout-desktop-dark theme-gray">-->
+  <body class="layout-desktop-white">
+    <!-- Views-->
+    <div class="views">
+      <!-- Left view-->
+      <div class="view view-left navbar-through">
+        <div class="navbar">
+          <div class="navbar-inner">
+          <div class="item-media"><i class="material-icons">settings</i></div>
+            <div class="left"></div>
+            <!--<div class="center sliding">Applicazioni</div>-->
+            <div class="right"></div>
+          </div>
+        </div>
+        <div class="pages">
+          <div data-page="index-left" class="page myleftpanel"> <!--pagina di sinistra--><!--colore: parti tra le liste-->
+            <div class="page-content myleftpanel"><!--colore: parti tra le liste-->
+              <!--<div class="content-block-title">Pannello di controllo</div>-->
+              <div class="list-block"><!--prima serie di link-->
+                <ul>
+                  <li><a href="index.html" data-view=".view-main" class="item-link myleftpanel my-class" id="tab1">
+                      <div class="item-content">
+                      <div class="item-media"><i class="material-icons">filter_1</i></div>
+                        <div class="item-inner no-chevron">
+                          <div class="item-title">page 1</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="testpage.html" data-view=".view-main" class="item-link myleftpanel" id="tab2">
+                      <div class="item-content">
+                        <div class="item-media"><i class="material-icons">filter_2</i></div>
+                        <div class="item-inner">
+                          <div class="item-title">page 2</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="testpage.1.html" data-view=".view-main" class="item-link myleftpanel" id="tab3">
+                      <div class="item-content">
+                      <div class="item-media"><i class="material-icons">note</i></div>
+                        <div class="item-inner">
+                          <div class="item-title">page 3</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="testpage.2.html" data-view=".view-main" class="item-link myleftpanel" id="tab3">
+                      <div class="item-content">
+                      <div class="item-media"><i class="material-icons">note</i></div>
+                        <div class="item-inner">
+                          <div class="item-title">page 4</div>
+                        </div>
+                      </div></a></li>
+                      
+                <!--</ul>
+              </div>
+              <div class="list-block">
+                <ul>-->
+                  <!-- this is a "separator" in the left panel ul-->
+                  <li>
+                    <div class="myleftpanel">
+                      <div class="item-inner no-chevron"></div>
+                    </div>
+                  </li>
+
+
+                  <li><a href="impostazioni.html" data-view=".view-main" class="item-link myleftpanel">
+                      <div class="item-content">
+                      <div class="item-media"><i class="material-icons">settings</i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Impostazioni</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="about.html" data-view=".view-main" class="item-link myleftpanel">
+                      <div class="item-content">
+                      <div class="item-media"><i class="material-icons">info</i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Info</div>
+                        </div>
+                      </div></a></li>
+                </ul>
+              </div>
+
+            </div><!--page content-->
+          </div><!--data page-->
+        </div><!--pages-->
+      </div><!--view left-->
+      <!-- Right view, it is main view-->
+      <div class="view view-main navbar-through">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="center sliding">page 1</div>
+            <!--<div class="right"><a href="#" data-panel="left" class="link open-panel icon-only"><i class="icon icon-bars"></i></a></div>-->
+          </div>
+        </div>
+        <!-- Pages-->
+        <div class="pages">
+          <!-- Page, data-page contains page name-->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content-->
+            <div class="page-content">
+              <!--<div class="content-block-title">nuovo titolo della sezione di nuovo</div>-->
+              <form id="form_page1" class="store-data list-block">
+                <ul id="lista_page1">
+                  <li><!--riga 1-->
+                    <div class="item-content">
+                      <div class="item-media"><i class="material-icons">credit_card</i></div>
+                      <div class="item-inner">
+                        <div class="item-title label">Codice fiscale</div>
+                        <div class="item-input">
+                          <input type="text" style="text-align:right" placeholder="xxx" name="id_p1_1"/>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="material-icons">phone</i></div>
+                      <div class="item-inner">
+                        <div class="item-title label">Telefono</div>
+                        <div class="item-input">
+                          <input type="text" style="text-align:right" placeholder="xxx" name="id_p1_2"/>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="material-icons">email</i></div>
+                      <div class="item-inner">
+                        <div class="item-title label">eMail</div>
+                        <div class="item-input">
+                          <input type="text" style="text-align:right" placeholder="xxx" name="id_p1_3"/>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="material-icons">home</i></div>
+                      <div class="item-inner">
+                        <div class="item-title label">Indirizzo</div>
+                        <div class="item-input">
+                          <input type="text" style="text-align:right" placeholder="xxx" name="id_p1_4"/>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+
+
+
+
+                  <!--<li>
+                    <a href="#" class="item-link list-button" id="mybutton_b1" onclick="fBollettiniImporto()">Calcola gli importi</a>
+                  </li>-->
+
+<li>
+  <a href="#" class="item-link" onclick="ftestpage1()">
+    <div class="item-content">
+      <div class="item-media"><i class="material-icons">save</i></div>
+        <div class="item-inner no-chevron-blue">
+          <div class="item-title">Save</div>
+        </div>
+    </div>
+  </a>
+</li>
+
+
+
+                </ul>
+              </form>
+
+              <div class="list-block">
+                <ul>
+                  <!--<li>
+                    <a href="#" class="item-link list-button-red" id="mybutton_b3" onclick="fBollettiniReset()">Cancella tutti i valori</a>
+                  </li>-->
+
+<li>
+  <a href="#" class="item-link">
+    <div class="item-content">
+      <div class="item-media"><i class="material-icons">save</i></div>
+        <div class="item-inner no-chevron-red">
+          <div class="item-title">Save</div>
+        </div>
+    </div>
+  </a>
+</li>
+
+
+
+                </ul>
+              </div>
+              </form>
+            </div><!--page content-->
+          </div><!--datapage-->
+        </div><!--pages-->
+    </div><!--view main-->
+    </div><!--views-->
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="dist/js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="my-app.js"></script>
+    <script type="text/javascript" src="testpage.js"></script>
+  </body>
+    <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+    </script>
+</html>

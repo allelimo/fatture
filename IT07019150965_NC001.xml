@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="fatturapa_v1.1.xsl"?>
+<p:FatturaElettronica versione="1.1" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:p="http://www.fatturapa.gov.it/sdi/fatturapa/v1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <FatturaElettronicaHeader>
+    <DatiTrasmissione>
+      <IdTrasmittente>
+        <IdPaese>IT</IdPaese>
+        <IdCodice>07019150965</IdCodice>
+      </IdTrasmittente>
+      <ProgressivoInvio>NC001</ProgressivoInvio>
+      <FormatoTrasmissione>SDI11</FormatoTrasmissione>
+      <CodiceDestinatario>4EBH0F</CodiceDestinatario>
+      <ContattiTrasmittente>
+        <Telefono>029244550</Telefono>
+        <Email>mi103@delegazioni.aci.it</Email>
+      </ContattiTrasmittente>
+    </DatiTrasmissione>
+    <CedentePrestatore>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>07019150965</IdCodice>
+        </IdFiscaleIVA>
+        <CodiceFiscale>07019150965</CodiceFiscale>
+        <Anagrafica>
+          <Denominazione>Praticar 2010 sas</Denominazione>
+        </Anagrafica>
+        <RegimeFiscale>RF01</RegimeFiscale>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>via cippa</Indirizzo>
+        <CAP>20063</CAP>
+        <Comune>milazzo</Comune>
+        <Provincia>CR</Provincia>
+        <Nazione>IT</Nazione>
+      </Sede>
+    </CedentePrestatore>
+    <CessionarioCommittente>
+      <DatiAnagrafici>
+        <CodiceFiscale>00493410583</CodiceFiscale>
+        <Anagrafica>
+          <Denominazione>Unita' Territoriale ACI di Aosta</Denominazione>
+        </Anagrafica>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>Regione Borgnalle, 10</Indirizzo>
+        <CAP>11100</CAP>
+        <Comune>Aosta</Comune>
+        <Provincia>AO</Provincia>
+        <Nazione>IT</Nazione>
+      </Sede>
+    </CessionarioCommittente>
+  </FatturaElettronicaHeader>
+  <FatturaElettronicaBody>
+    <DatiGenerali>
+      <DatiGeneraliDocumento>
+        <TipoDocumento>TD04</TipoDocumento>
+        <Divisa>EUR</Divisa>
+        <Data>2016-11-01</Data>
+        <Numero>1/2016</Numero>
+        <DatiRitenuta>
+          <TipoRitenuta>RT02</TipoRitenuta>
+          <ImportoRitenuta>4.00</ImportoRitenuta>
+          <AliquotaRitenuta>20.00</AliquotaRitenuta>
+          <CausalePagamento>A</CausalePagamento>
+        </DatiRitenuta>
+        <ImportoTotaleDocumento>24.40</ImportoTotaleDocumento>
+        <Causale>causale della fattura 123</Causale>
+      </DatiGeneraliDocumento>
+    </DatiGenerali>
+    <DatiBeniServizi>
+      <DettaglioLinee>
+        <NumeroLinea>1</NumeroLinea>
+        <Descrizione>fsfsdf</Descrizione>
+        <PrezzoUnitario>10.00</PrezzoUnitario>
+        <PrezzoTotale>10.00</PrezzoTotale>
+        <AliquotaIVA>22.00</AliquotaIVA>
+        <Ritenuta>SI</Ritenuta>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>2</NumeroLinea>
+        <Descrizione>Spese imponibili</Descrizione>
+        <PrezzoUnitario>10.00</PrezzoUnitario>
+        <PrezzoTotale>10.00</PrezzoTotale>
+        <AliquotaIVA>22.00</AliquotaIVA>
+        <Ritenuta>SI</Ritenuta>
+      </DettaglioLinee>
+      <DatiRiepilogo>
+        <AliquotaIVA>22.00</AliquotaIVA>
+        <ImponibileImporto>20.00</ImponibileImporto>
+        <Imposta>4.40</Imposta>
+        <EsigibilitaIVA>S</EsigibilitaIVA>
+        <RiferimentoNormativo>IVA versata dal committente ai sensi dell'art. 17-ter DPR 633/1972</RiferimentoNormativo>
+      </DatiRiepilogo>
+    </DatiBeniServizi>
+    </FatturaElettronicaBody>
+</p:FatturaElettronica>
+<!-- Spese imponibili: 10.00 -->

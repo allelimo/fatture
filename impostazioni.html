@@ -1,0 +1,161 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+    <div class="center sliding">Impostazioni</div>
+    <!--<div class="right"><a href="#" data-panel="left" class="link open-panel icon-only"><i class="icon icon-bars"></i></a></div>-->
+  </div>
+</div>
+<div class="pages">
+  <div data-page="impostazioni" class="page">
+    <div class="page-content">
+      <div class="content-block-title">Pra</div>
+      <form id="form_impostazioni_1" class="store-data list-block">
+        <ul id="listaImpostazioniPra">
+          <li><!--riga 1-->
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">Diritti</div>
+                <div class="item-input">
+                  <input type="text" style="text-align:right" placeholder="importo" name="pradir" id="pradir"/>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><!--riga 1-->
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">Imposta di bollo</div>
+                <div class="item-input">
+                  <input type="text" style="text-align:right" placeholder="importo" name="praimp" id="praimp"/>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </form>
+
+      <div class="content-block-title">Umc</div>
+      <form id="form_impostazioni_2" class="store-data list-block">
+        <ul id="listaImpostazioniUmc">
+          <li><!--riga 1-->
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">Diritti</div>
+                <div class="item-input">
+                  <input type="text" style="text-align:right" placeholder="importo" name="umcdir" id="umcdir"/>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><!--riga 1-->
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">Imposta di bollo</div>
+                <div class="item-input">
+                  <input type="text" style="text-align:right" placeholder="importo" name="umcimp" id="umcimp"/>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </form>
+
+      <div class="content-block-title">Aci</div>
+      <form id="form_impostazioni_3" class="store-data list-block">
+        <ul id="listaImpostazioniAci">
+          <li><!--riga 1-->
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">Diritti 1</div>
+                <div class="item-input">
+                  <input type="text" style="text-align:right" placeholder="importo" name="acidir1" id="acidir1"/>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><!--riga 1-->
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">Diritti 2</div>
+                <div class="item-input">
+                  <input type="text" style="text-align:right" placeholder="importo" name="acidir2" id="acidir2"/>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><!--riga 1-->
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">Diritti 3</div>
+                <div class="item-input">
+                  <input type="text" style="text-align:right" placeholder="importo" name="acidir3" id="acidir3"/>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><!--riga 1-->
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">Sconto</div>
+                <div class="item-input">
+                  <input type="text" style="text-align:right" placeholder="importo" name="acisconto" id="acisconto"/>
+                </div>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </form>
+
+      <div class="content-block-title">Poste</div>
+      <form id="form_impostazioni_4" class="store-data list-block">
+        <ul id="listaImpostazioniPoste">
+          <li><!--riga 1-->
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">Costo bollettini</div>
+                <div class="item-input">
+                  <input type="text" style="text-align:right" placeholder="importo" name="posimp" id="posimp"/>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><!--riga 1-->
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">Costo raccomandate</div>
+                <div class="item-input">
+                  <input type="text" style="text-align:right" placeholder="importo" name="posrac" id="posrac"/>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </form>
+
+      <div class="list-block">
+        <ul>
+          <li>
+            <div class="item-content">
+              <div class="item-inner"> 
+                <div class="item-title label">Modifica impostazioni</div>
+                <div class="item-after"> 
+                    <div class="item-input">
+                      <label class="label-switch">
+                        <input type="checkbox" name="checkimpostazioni" id="checkimpostazioni" onchange="fModificaImpostazioni()"/>
+                        <div class="checkbox"></div>
+                      </label>
+                </div></div></div></div>
+          </li>
+        </ul>
+      </div>
+      <div class="list-block">
+        <ul>
+          <li>
+            <a href="#" class="item-link list-button-red" id="mybtn_impostazioni" onclick="fResetImpostazioni()">Cancella tutti i valori</a>
+          </li>
+        </ul>
+      </div>
+    </div><!--page content-->
+  </div><!--page-->
+</div><!--pages-->

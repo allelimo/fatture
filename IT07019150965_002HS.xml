@@ -1,0 +1,134 @@
+<p:FatturaElettronica versione="1.1" xmlns:p="http://www.fatturapa.gov.it/sdi/fatturapa/v1.1">
+  <FatturaElettronicaHeader>
+    <DatiTrasmissione>
+      <IdTrasmittente>
+        <IdPaese>IT</IdPaese>
+        <IdCodice>07019150965</IdCodice>
+      </IdTrasmittente>
+      <ProgressivoInvio>002HS</ProgressivoInvio>
+      <FormatoTrasmissione>SDI11</FormatoTrasmissione>
+      <CodiceDestinatario>PEDFB3</CodiceDestinatario>
+      <ContattiTrasmittente>
+        <Telefono>029244550</Telefono>
+        <Email>MI103@DELEGAZIONI.ACI.IT</Email>
+      </ContattiTrasmittente>
+    </DatiTrasmissione>
+    <CedentePrestatore>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>07019150965</IdCodice>
+        </IdFiscaleIVA>
+        <CodiceFiscale>07019150965</CodiceFiscale>
+        <Anagrafica>
+          <Denominazione>PRATICAR 2010 SAS DI LIMONTA ALESSANDRO &amp; C.</Denominazione>
+        </Anagrafica>
+        <RegimeFiscale>RF01</RegimeFiscale>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>PIAZZA VECCHIA FILANDA</Indirizzo>
+        <CAP>20063</CAP>
+        <Comune>CERNUSCO SUL NAVIGLIO</Comune>
+        <Provincia>MI</Provincia>
+        <Nazione>IT</Nazione>
+      </Sede>
+    </CedentePrestatore>
+    <CessionarioCommittente>
+      <DatiAnagrafici>
+        <CodiceFiscale>80050050154</CodiceFiscale>
+        <Anagrafica>
+          <Denominazione>Regione Lombardia Presidenza</Denominazione>
+        </Anagrafica>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>Piazza Citta' di Lombardia, 1</Indirizzo>
+        <CAP>20124</CAP>
+        <Comune>Milano</Comune>
+        <Provincia>MI</Provincia>
+        <Nazione>IT</Nazione>
+      </Sede>
+    </CessionarioCommittente>
+  </FatturaElettronicaHeader>
+  <FatturaElettronicaBody>
+    <DatiGenerali>
+      <DatiGeneraliDocumento>
+        <TipoDocumento>TD01</TipoDocumento>
+        <Divisa>EUR</Divisa>
+        <Data>2015-07-23</Data>
+        <Numero>1</Numero>
+        <ImportoTotaleDocumento>1108.19</ImportoTotaleDocumento>
+        <Causale>per compensi maturati per operazioni di bonifica degli archivi regionali della tassa automobilistica, ex art.10 della convenzione il cui tipo è stato approvato con DGR 1033 del 22/12/2010</Causale>
+      </DatiGeneraliDocumento>
+      <DatiContratto>
+        <IdDocumento>R13PFFSQQQGM7L</IdDocumento>
+        <CodiceCIG>3502163C52</CodiceCIG>
+      </DatiContratto>
+    </DatiGenerali>
+    <DatiBeniServizi>
+      <DettaglioLinee>
+        <NumeroLinea>1</NumeroLinea>
+        <Descrizione>Operazioni di bonifica effettuate nel 2° trimestre 2013</Descrizione>
+        <Quantita>0.0000</Quantita>
+        <UnitaMisura>--</UnitaMisura>
+        <PrezzoUnitario>0.0000</PrezzoUnitario>
+        <PrezzoTotale>0.00</PrezzoTotale>
+        <AliquotaIVA>22.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>2</NumeroLinea>
+        <Descrizione>operazione di bonifica di complessità A</Descrizione>
+        <Quantita>15.0000</Quantita>
+        <UnitaMisura>PZ</UnitaMisura>
+        <PrezzoUnitario>4.0000</PrezzoUnitario>
+        <PrezzoTotale>60.00</PrezzoTotale>
+        <AliquotaIVA>22.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>3</NumeroLinea>
+        <Descrizione>operazione di bonifica di complessità D</Descrizione>
+        <Quantita>62.0000</Quantita>
+        <UnitaMisura>PZ</UnitaMisura>
+        <PrezzoUnitario>7.0000</PrezzoUnitario>
+        <PrezzoTotale>434.00</PrezzoTotale>
+        <AliquotaIVA>22.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>4</NumeroLinea>
+        <Descrizione>operazione di bonifica di complessità C</Descrizione>
+        <Quantita>27.0000</Quantita>
+        <UnitaMisura>PZ</UnitaMisura>
+        <PrezzoUnitario>6.0000</PrezzoUnitario>
+        <PrezzoTotale>162.00</PrezzoTotale>
+        <AliquotaIVA>22.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>5</NumeroLinea>
+        <Descrizione>operazione di bonifica di complessità B</Descrizione>
+        <Quantita>49.0000</Quantita>
+        <UnitaMisura>PZ</UnitaMisura>
+        <PrezzoUnitario>5.1500</PrezzoUnitario>
+        <PrezzoTotale>252.35</PrezzoTotale>
+        <AliquotaIVA>22.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DatiRiepilogo>
+        <AliquotaIVA>22.00</AliquotaIVA>
+        <SpeseAccessorie>0.00</SpeseAccessorie>
+        <Arrotondamento>0.00</Arrotondamento>
+        <ImponibileImporto>908.35</ImponibileImporto>
+        <Imposta>199.84</Imposta>
+        <EsigibilitaIVA>S</EsigibilitaIVA>
+      </DatiRiepilogo>
+    </DatiBeniServizi>
+    <DatiPagamento>
+      <CondizioniPagamento>TP02</CondizioniPagamento>
+      <DettaglioPagamento>
+        <ModalitaPagamento>MP05</ModalitaPagamento>
+        <ImportoPagamento>908.35</ImportoPagamento>
+        <IstitutoFinanziario>CASSA DI RISPARMIO DI PARMA E PIACENZA</IstitutoFinanziario>
+        <IBAN>IT61J0623020413000046723346</IBAN>
+        <ABI>06230</ABI>
+        <CAB>20413</CAB>
+      </DettaglioPagamento>
+    </DatiPagamento>
+  </FatturaElettronicaBody>
+</p:FatturaElettronica>
