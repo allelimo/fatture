@@ -1,3 +1,5 @@
+function ftestpage1() {
+
 var textToSave = "";
 var term = "\r\n";
 
@@ -29,6 +31,7 @@ var v_piva_d = "",
     v_codcig = "",
     v_descr = "", 
     v_iva = 22,
+    v_unimis = "PZ",
     v_qt2 = 0, 
     v_pu2 = 0, 
     v_pt2 = 0, 
@@ -127,13 +130,13 @@ textToSave =
 "        <UnitaMisura>--</UnitaMisura>" + term +
 "        <PrezzoUnitario>0.0000</PrezzoUnitario>" + term +
 "        <PrezzoTotale>0.00</PrezzoTotale>" + term +
-"        <AliquotaIVA>" + v_iva + "</AliquotaIVA>" + term +
+"        <AliquotaIVA>22.00</AliquotaIVA>" + term +
 "      </DettaglioLinee>" + term +
 "      <DettaglioLinee>" + term +
 "        <NumeroLinea>2</NumeroLinea>" + term +
 "        <Descrizione>operazione di bonifica di complessità A</Descrizione>" + term +
 "        <Quantita>" + v_qt2 + "</Quantita>" + term +
-"        <UnitaMisura>PZ</UnitaMisura>" + term +
+"        <UnitaMisura>" + v_unimis + "</UnitaMisura>" + term +
 "        <PrezzoUnitario>" + v_pu2 + "</PrezzoUnitario>" + term +
 "        <PrezzoTotale>" + v_pt2 + "</PrezzoTotale>" + term +
 "        <AliquotaIVA>" + v_iva + "</AliquotaIVA>" + term +
@@ -142,7 +145,7 @@ textToSave =
 "        <NumeroLinea>3</NumeroLinea>" + term +
 "        <Descrizione>operazione di bonifica di complessità D</Descrizione>" + term +
 "        <Quantita>" + v_qt3 + "</Quantita>" + term +
-"        <UnitaMisura>PZ</UnitaMisura>" + term +
+"        <UnitaMisura>" + v_unimis + "</UnitaMisura>" + term +
 "        <PrezzoUnitario>" + v_pu3 + "</PrezzoUnitario>" + term +
 "        <PrezzoTotale>" + v_pt3 + "</PrezzoTotale>" + term +
 "        <AliquotaIVA>" + v_iva + "</AliquotaIVA>" + term +
@@ -151,7 +154,7 @@ textToSave =
 "        <NumeroLinea>4</NumeroLinea>" + term +
 "        <Descrizione>operazione di bonifica di complessità C</Descrizione>" + term +
 "        <Quantita>" + v_qt4 + "</Quantita>" + term +
-"        <UnitaMisura>PZ</UnitaMisura>" + term +
+"        <UnitaMisura>" + v_unimis + "</UnitaMisura>" + term +
 "        <PrezzoUnitario>" + v_pu4 + "</PrezzoUnitario>" + term +
 "        <PrezzoTotale>" + v_pt4 + "</PrezzoTotale>" + term +
 "        <AliquotaIVA>" + v_iva + "</AliquotaIVA>" + term +
@@ -160,7 +163,7 @@ textToSave =
 "        <NumeroLinea>5</NumeroLinea>" + term +
 "        <Descrizione>operazione di bonifica di complessità B</Descrizione>" + term +
 "        <Quantita>" + v_qt5 + "</Quantita>" + term +
-"        <UnitaMisura>PZ</UnitaMisura>" + term +
+"        <UnitaMisura>" + v_unimis + "</UnitaMisura>" + term +
 "        <PrezzoUnitario>" + v_pu5 + "</PrezzoUnitario>" + term +
 "        <PrezzoTotale>" + v_pt5 + "</PrezzoTotale>" + term +
 "        <AliquotaIVA>" + v_iva + "</AliquotaIVA>" + term +
@@ -187,3 +190,33 @@ textToSave =
 "    </DatiPagamento>" + term +
 "  </FatturaElettronicaBody>" + term +
 "</p:FatturaElettronica>" + term;
+
+
+
+    var textToSaveAsBlob = new Blob([textToSave], {type:"text/plain"});
+    var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
+    //var fileNameToSaveAs = document.getElementById("inputFileNameToSaveAs").value;
+    var fileNameToSaveAs = "myFile.xml";
+ 
+    //var downloadLink = document.createElement("a");
+    //downloadLink.download = fileNameToSaveAs;
+    //alert(fileNameToSaveAs);
+    //downloadLink.innerHTML = "Download File";
+    //downloadLink.href = textToSaveAsURL;
+    //alert(textToSaveAsURL);
+
+    // questo funziona:
+    // document.getElementById("mybutton_tp2").href = textToSaveAsURL;
+
+    var mylink = document.getElementById("mybutton_tp3");
+    mylink.download = fileNameToSaveAs;
+    mylink.href = textToSaveAsURL;
+
+    var mylink2 = document.getElementById("mybutton_tp4");
+    mylink2.download = fileNameToSaveAs;
+    mylink2.href = textToSaveAsURL;
+
+
+
+
+}
