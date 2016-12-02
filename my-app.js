@@ -466,8 +466,33 @@ function round5(x){
 // link attivi                   //
 // ============================= //
 
+// versione originale di plpl
+// $$(document).on('click','a.item-link',function(){
+//     var target=$$(this);
+//     target.closest('ul').find('a.item-link').removeClass('my-class');
+//     target.addClass('my-class');
+// });
+
+
+// $$(document).on('click','a.item-link',function(){
+//     var target=$$(this);
+//     if (target.closest('ul').find('a.item-link').hasClass('smart-select')) {
+//         return;
+//     } else {
+//         target.closest('ul').find('a.item-link').removeClass('my-class');
+//         target.addClass('my-class');
+//     }
+
+// });
+
+
+// modifica per applicare solo al pannello di sinistra
 $$(document).on('click','a.item-link',function(){
     var target=$$(this);
-    target.closest('ul').find('a.item-link').removeClass('my-class');
-    target.addClass('my-class');
+    if (target.closest('ul').find('a.item-link').hasClass('myleftpanel')) {
+        target.closest('ul').find('a.item-link').removeClass('my-class');
+        target.addClass('my-class');
+    }
 });
+
+
