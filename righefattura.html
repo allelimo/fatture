@@ -1,8 +1,7 @@
-
 <div class="navbar">
   <div class="navbar-inner">
     <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
-    <div class="center sliding">Assegni 1</div>
+    <div class="center sliding">Righe fattura</div>
     <!--<div class="right"><a href="#" data-panel="left" class="link open-panel icon-only"><i class="icon icon-bars"></i></a></div>-->
   </div>
 </div>
@@ -11,19 +10,7 @@
     <div class="page-content">
       <!--<div class="content-block-title">calcolo assegni</div>-->
       <form id="form_righefattura" class="store-data list-block">
-        <ul id="lista_totalefattura">
-          <li>
-            <div class="item-content">
-              <div class="item-media"><i class="material-icons">person</i></div>
-              <div class="item-inner"> 
-                <div class="item-title label">Descrizione fattura</div>
-                <div class="item-input">
-                  <input type="text" style="text-align:right" placeholder="Operazioni di bonifica effettuate nel 2° trimestre 2013" name="tDescrFatt"/>
-                </div>
-              </div>
-            </div>
-          </li>
-<!--riga 1-->          
+        <ul id="lista_righefattura">
         <div class="content-block-title">operazione di bonifica di complessita' A</div>
           <li>
             <div class="item-content">
@@ -58,109 +45,104 @@
               </div>
             </div>
           </li>
-<!--riga 2-->
         <div class="content-block-title">operazione di bonifica di complessita' D</div>
           <li>
             <div class="item-content">
-              <div class="item-media"><i class="material-icons">filter_1</i></div>
+              <div class="item-media"><i class="material-icons">assignment</i></div>
               <div class="item-inner"> 
                 <div class="item-title label">Quantità</div>
                 <div class="item-input">
-                  <input type="text" style="text-align:right" placeholder="quantità" name="testpage2"/>
+                  <input type="text" style="text-align:right" placeholder="quantità" name="testpage2_1" id="testpage2_1" onkeyup="mycalc()"/>
                 </div>
               </div>
             </div>
           </li>
           <li>
             <div class="item-content">
-              <div class="item-media"><i class="material-icons">filter_1</i></div>
+              <div class="item-media"><i class="material-icons">euro_symbol</i></div>
               <div class="item-inner"> 
                 <div class="item-title label">Prezzo unitario</div>
                 <div class="item-input">
-                  <input type="text" style="text-align:right" placeholder="prezzo unitario" name="testpage2"/>
+                  <input type="text" style="text-align:right" placeholder="prezzo unitario" name="testpage2_2" id="testpage2_2" onkeyup="mycalc()"/>
                 </div>
               </div>
             </div>
           </li>
           <li>
             <div class="item-content">
-              <div class="item-media"><i class="material-icons">filter_1</i></div>
+              <div class="item-media"><i class="material-icons">functions</i></div>
               <div class="item-inner"> 
                 <div class="item-title label">Prezzo totale</div>
-                <div class="item-input">
-                  <input type="text" style="text-align:right" placeholder="prezzo totale" name="testpage2"/>
+                <div class="item-input disabled">
+                  <input type="text" style="text-align:right" placeholder="prezzo totale" name="testpage2_3" id="testpage2_3"/>
                 </div>
               </div>
             </div>
           </li>
-
-<!--totali-->
         <div class="content-block-title">operazione di bonifica di complessita' B</div>
           <li>
             <div class="item-content">
-              <div class="item-media"><i class="material-icons">filter_1</i></div>
+              <div class="item-media"><i class="material-icons">assignment</i></div>
               <div class="item-inner"> 
-                <div class="item-title label">Imponibile</div>
-                <div class="item-input disabled">
-                  <input type="text" style="text-align:right" placeholder="quantità" name="_imponibile" id="_imponibile"/>
+                <div class="item-title label">Quantità</div>
+                <div class="item-input">
+                  <input type="text" style="text-align:right" placeholder="quantità" name="testpage2_1" id="testpage2_1" onkeyup="mycalc()"/>
                 </div>
               </div>
             </div>
           </li>
           <li>
             <div class="item-content">
-              <div class="item-media"><i class="material-icons">filter_1</i></div>
+              <div class="item-media"><i class="material-icons">euro_symbol</i></div>
               <div class="item-inner"> 
-                <div class="item-title label">Imposta</div>
-                <div class="item-input disabled">
-                  <input type="text" style="text-align:right" placeholder="prezzo unitario" name="_imposta" id="_imposta"/>
+                <div class="item-title label">Prezzo unitario</div>
+                <div class="item-input">
+                  <input type="text" style="text-align:right" placeholder="prezzo unitario" name="testpage2_2" id="testpage2_2" onkeyup="mycalc()"/>
                 </div>
               </div>
             </div>
           </li>
           <li>
             <div class="item-content">
-              <div class="item-media"><i class="material-icons">filter_1</i></div>
+              <div class="item-media"><i class="material-icons">functions</i></div>
               <div class="item-inner"> 
-                <div class="item-title label">Totale documento</div>
+                <div class="item-title label">Prezzo totale</div>
                 <div class="item-input disabled">
-                  <input type="text" style="text-align:right" placeholder="prezzo totale" name="_totaldoc" id="_totaldoc"/>
+                  <input type="text" style="text-align:right" placeholder="prezzo totale" name="testpage2_3" id="testpage2_3"/>
                 </div>
               </div>
             </div>
           </li>
-
-<!--totali-->
         <div class="content-block-title">operazione di bonifica di complessita' C</div>
           <li>
             <div class="item-content">
-              <div class="item-media"><i class="material-icons">filter_1</i></div>
+              <div class="item-media"><i class="material-icons">assignment</i></div>
               <div class="item-inner"> 
-                <div class="item-title label">Imponibile</div>
-                <div class="item-input disabled">
-                  <input type="text" style="text-align:right" placeholder="quantità" name="_imponibile" id="_imponibile"/>
+                <div class="item-title label">Quantità</div>
+                <div class="item-input">
+                  <input type="text" style="text-align:right" placeholder="quantità" name="testpage2_1" id="testpage2_1" onkeyup="mycalc()"/>
                 </div>
               </div>
             </div>
           </li>
           <li>
             <div class="item-content">
-              <div class="item-media"><i class="material-icons">filter_1</i></div>
+              <div class="item-media"><i class="material-icons">euro_symbol</i></div>
               <div class="item-inner"> 
-                <div class="item-title label">Imposta</div>
-                <div class="item-input disabled">
-                  <input type="text" style="text-align:right" placeholder="prezzo unitario" name="_imposta" id="_imposta"/>
+                <div class="item-title label">Prezzo unitario</div>
+                <div class="item-input">
+                  <input type="text" style="text-align:right" placeholder="prezzo unitario" name="testpage2_2" id="testpage2_2" onkeyup="mycalc()"/>
                 </div>
               </div>
             </div>
           </li>
           <li>
             <div class="item-content">
-              <div class="item-media"><i class="material-icons">filter_1</i></div>
+              <div class="item-media"><i class="material-icons">functions</i></div>
               <div class="item-inner"> 
-                <div class="item-title label">Totale documento</div>
+                <div class="item-title label">Prezzo totale</div>
                 <div class="item-input disabled">
-                  <input type="text" style="text-align:right" placeholder="prezzo totale" name="_totaldoc" id="_totaldoc"/>
+                  <input type="text" style="text-align:right" placeholder="prezzo totale" name="testpage2_3" id="testpage2_3"/>
                 </div>
               </div>
             </div>
@@ -232,7 +214,6 @@
               </div>
             </a>
           </li>
-
         </ul>
       </div>
     </div><!--page content-->
