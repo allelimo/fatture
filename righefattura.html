@@ -6,7 +6,7 @@
   </div>
 </div>
 <div class="pages">
-  <div data-page="testpage.1" class="page">
+  <div data-page="righefattura" class="page">
     <div class="page-content">
       <!--<div class="content-block-title">calcolo assegni</div>-->
       <form id="form_righefattura" class="store-data list-block">
@@ -18,7 +18,7 @@
               <div class="item-inner"> 
                 <div class="item-title label">Quantità</div>
                 <div class="item-input">
-                  <input type="text" style="text-align:right" placeholder="quantità" name="testpage2_1" id="testpage2_1" onkeyup="mycalc()"/>
+                  <input type="text" style="text-align:right" placeholder="quantità" name="rf_1_qt" id="rf_1_qt" onkeyup="calcRiga1()"/>
                 </div>
               </div>
             </div>
@@ -29,7 +29,7 @@
               <div class="item-inner"> 
                 <div class="item-title label">Prezzo unitario</div>
                 <div class="item-input">
-                  <input type="text" style="text-align:right" placeholder="prezzo unitario" name="testpage2_2" id="testpage2_2" onkeyup="mycalc()"/>
+                  <input type="text" style="text-align:right" placeholder="prezzo unitario" name="rf_1_pu" id="rf_1_pu" onkeyup="calcRiga1()"/>
                 </div>
               </div>
             </div>
@@ -40,7 +40,7 @@
               <div class="item-inner"> 
                 <div class="item-title label">Prezzo totale</div>
                 <div class="item-input disabled">
-                  <input type="text" style="text-align:right" placeholder="prezzo totale" name="testpage2_3" id="testpage2_3"/>
+                  <input type="text" style="text-align:right" placeholder="prezzo totale" name="rf_1_pt" id="rf_1_pt"/>
                 </div>
               </div>
             </div>
@@ -52,7 +52,7 @@
               <div class="item-inner"> 
                 <div class="item-title label">Quantità</div>
                 <div class="item-input">
-                  <input type="text" style="text-align:right" placeholder="quantità" name="testpage2_1" id="testpage2_1" onkeyup="mycalc()"/>
+                  <input type="text" style="text-align:right" placeholder="quantità" name="rf_2_qt" id="rf_2_qt" onkeyup="calcRiga2()"/>
                 </div>
               </div>
             </div>
@@ -63,7 +63,7 @@
               <div class="item-inner"> 
                 <div class="item-title label">Prezzo unitario</div>
                 <div class="item-input">
-                  <input type="text" style="text-align:right" placeholder="prezzo unitario" name="testpage2_2" id="testpage2_2" onkeyup="mycalc()"/>
+                  <input type="text" style="text-align:right" placeholder="prezzo unitario" name="rf_2_pu" id="rf_2_pu" onkeyup="calcRiga2()"/>
                 </div>
               </div>
             </div>
@@ -74,7 +74,7 @@
               <div class="item-inner"> 
                 <div class="item-title label">Prezzo totale</div>
                 <div class="item-input disabled">
-                  <input type="text" style="text-align:right" placeholder="prezzo totale" name="testpage2_3" id="testpage2_3"/>
+                  <input type="text" style="text-align:right" placeholder="prezzo totale" name="rf_2_pt" id="rf_2_pt"/>
                 </div>
               </div>
             </div>
@@ -86,7 +86,7 @@
               <div class="item-inner"> 
                 <div class="item-title label">Quantità</div>
                 <div class="item-input">
-                  <input type="text" style="text-align:right" placeholder="quantità" name="testpage2_1" id="testpage2_1" onkeyup="mycalc()"/>
+                  <input type="text" style="text-align:right" placeholder="quantità" name="rf_3_qt" id="rf_3_qt" onkeyup="mycalc()"/>
                 </div>
               </div>
             </div>
@@ -97,7 +97,7 @@
               <div class="item-inner"> 
                 <div class="item-title label">Prezzo unitario</div>
                 <div class="item-input">
-                  <input type="text" style="text-align:right" placeholder="prezzo unitario" name="testpage2_2" id="testpage2_2" onkeyup="mycalc()"/>
+                  <input type="text" style="text-align:right" placeholder="prezzo unitario" name="rf_3_pu" id="rf_3_pu" onkeyup="mycalc()"/>
                 </div>
               </div>
             </div>
@@ -108,7 +108,7 @@
               <div class="item-inner"> 
                 <div class="item-title label">Prezzo totale</div>
                 <div class="item-input disabled">
-                  <input type="text" style="text-align:right" placeholder="prezzo totale" name="testpage2_3" id="testpage2_3"/>
+                  <input type="text" style="text-align:right" placeholder="prezzo totale" name="rf_3_pt" id="rf_3_pt"/>
                 </div>
               </div>
             </div>
@@ -120,7 +120,7 @@
               <div class="item-inner"> 
                 <div class="item-title label">Quantità</div>
                 <div class="item-input">
-                  <input type="text" style="text-align:right" placeholder="quantità" name="testpage2_1" id="testpage2_1" onkeyup="mycalc()"/>
+                  <input type="text" style="text-align:right" placeholder="quantità" name="rf_4_qt" id="rf_4_qt" onkeyup="mycalc()"/>
                 </div>
               </div>
             </div>
@@ -131,7 +131,7 @@
               <div class="item-inner"> 
                 <div class="item-title label">Prezzo unitario</div>
                 <div class="item-input">
-                  <input type="text" style="text-align:right" placeholder="prezzo unitario" name="testpage2_2" id="testpage2_2" onkeyup="mycalc()"/>
+                  <input type="text" style="text-align:right" placeholder="prezzo unitario" name="rf_4_pu" id="rf_4_pu" onkeyup="mycalc()"/>
                 </div>
               </div>
             </div>
@@ -142,11 +142,24 @@
               <div class="item-inner"> 
                 <div class="item-title label">Prezzo totale</div>
                 <div class="item-input disabled">
-                  <input type="text" style="text-align:right" placeholder="prezzo totale" name="testpage2_3" id="testpage2_3"/>
+                  <input type="text" style="text-align:right" placeholder="prezzo totale" name="rf_3_pt" id="rf_3_pt"/>
                 </div>
               </div>
             </div>
           </li>
+
+          <li>
+            <div class="item-content">
+              <div class="item-media"><i class="material-icons">functions</i></div>
+              <div class="item-inner"> 
+                <div class="item-title label">Prezzo totale</div>
+                <div class="item-input disabled">
+                  <input type="hidden" name="rf_hidden" id="rf_hidden"/>
+                </div>
+              </div>
+            </div>
+          </li>
+
           <!--buttons-->
           <li>
             <a href="#" class="item-link">

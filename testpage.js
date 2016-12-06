@@ -136,3 +136,67 @@ document.getElementById("_imposta").value = impos;
 document.getElementById("_totaldoc").value = totdoc;
 
 }
+
+function calcRighe(numero, prezzou, prezzot) {
+    var num = document.getElementById(numero).value;
+    var pru = document.getElementById(prezzou).value;
+    num = parseFloat(num);
+    pru = parseFloat(pru);
+    var prt = (num * pru);
+    document.getElementById(prezzot).value = prt;
+
+    var riga1 = document.getElementById("rf_1_pt").value;
+    var riga2 = document.getElementById("rf_2_pt").value;
+    riga1 = parseFloat(riga1);
+    riga2 = parseFloat(riga2);
+    
+    alert(riga1);
+    alert(riga2);
+
+    var totrighe = (riga1 + riga2);
+    alert(totrighe);
+    var impos = (totrighe * 0.22);
+    var totdoc = (totrighe + impos);
+    alert(impos);
+    alert(totdoc);
+
+    
+    document.getElementById("rf_hidden").value = totrighe;
+
+    // document.getElementById("tf_impst").value = impos;
+    // document.getElementById("tf_imptot").value = totdoc;
+}
+
+function calcRiga1() {
+    calcRighe("rf_1_qt", "rf_1_pu", "rf_1_pt");
+}
+
+function calcRiga2() {
+    calcRighe("rf_2_qt", "rf_2_pu", "rf_2_pt");
+}
+
+
+
+
+myApp.onPageInit("totalefattura", function (page) {
+// recupera la prima variabile globale da pagina impostazioni
+
+    var storedData = myApp.formGetData('form_righefattura');
+    if(storedData) {
+        var jsonstring = JSON.stringify(storedData); 
+        var jsonvalues = JSON.parse(jsonstring);
+        var totalerighefattura = parseFloat(jsonvalues.rf_hidden);
+        var totaleimposta = (totalerighefattura * 0.22);
+        var totaledocumento = (totalerighefattura + totaleimposta);
+
+        document.getElementById("tf_imponb").value = totalerighefattura;
+        document.getElementById("tf_impst").value = totaleimposta;
+        document.getElementById("tf_imptot").value = totaledocumento;
+    }   
+
+})
+
+
+
+
+
