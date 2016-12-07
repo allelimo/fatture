@@ -150,15 +150,15 @@ function calcRighe(numero, prezzou, prezzot) {
     riga1 = parseFloat(riga1);
     riga2 = parseFloat(riga2);
     
-    alert(riga1);
-    alert(riga2);
+    // alert(riga1);
+    // alert(riga2);
 
     var totrighe = (riga1 + riga2);
-    alert(totrighe);
+    // alert(totrighe);
     var impos = (totrighe * 0.22);
     var totdoc = (totrighe + impos);
-    alert(impos);
-    alert(totdoc);
+    // alert(impos);
+    // alert(totdoc);
 
     
     document.getElementById("rf_hidden").value = totrighe;
@@ -193,6 +193,18 @@ myApp.onPageInit("totalefattura", function (page) {
         document.getElementById("tf_impst").value = totaleimposta;
         document.getElementById("tf_imptot").value = totaledocumento;
     }   
+
+
+})
+
+
+myApp.onPageInit("about", function (page) {
+// recupera la prima variabile globale da pagina impostazioni
+
+        document.getElementById("aboutFW7").value = myApp.version;
+        document.getElementById("aboutElectron").value = process.versions.electron;
+        document.getElementById("aboutChrome").value = process.versions.chrome;
+        document.getElementById("aboutNode").value = process.versions.node;
 
 })
 
