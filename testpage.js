@@ -205,6 +205,7 @@ myApp.onPageInit("about", function (page) {
         document.getElementById("aboutElectron").value = process.versions.electron;
         document.getElementById("aboutChrome").value = process.versions.chrome;
         document.getElementById("aboutNode").value = process.versions.node;
+        document.getElementById("aboutv8").value = process.versions.v8;
 
 })
 
