@@ -71,3 +71,7 @@ a,
   color: var(--desktop-blue);
 }
 
+/* testo non selezionabile?*/
+.my-ui-text {
+      -webkit-user-select:none;
+  }
